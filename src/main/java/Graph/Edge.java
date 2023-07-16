@@ -1,4 +1,5 @@
 package Graph;
+
 /**
  * Representation of a directed graph edge
  */
@@ -10,9 +11,10 @@ public class Edge {
 
     /**
      * Construct a new edge
+     * 
      * @param v1 source vertex
      * @param v2 sink vertex
-     * Ex. v -> w; v = source, w = sink
+     *           Ex. v -> w; v = source, w = sink
      * @param wt the distance or weight of this edge
      */
     public Edge(Vertex v1, Vertex v2, Integer wt) {
@@ -22,6 +24,7 @@ public class Edge {
     }
 
     // used for printing
+    @Override
     public String toString() {
         return vertex1.toString() + " " + vertex2.toString() + " " + weight;
     }

@@ -2,7 +2,7 @@ package Path;
 
 import Graph.Vertex;
 
-public class PathVertex extends Vertex{
+public class PathVertex extends Vertex {
     public Integer distance;
     public Vertex parent;
     public boolean visited;

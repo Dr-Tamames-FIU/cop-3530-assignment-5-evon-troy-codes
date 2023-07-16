@@ -1,4 +1,5 @@
 package Graph;
+
 import java.util.List;
 
 /**
@@ -13,24 +14,27 @@ public abstract class AbstractGraph implements Graph {
 
     /**
      * Construct a new abstract graph
-     * @param vertices the initial list of verticies in the graph
-     * @param edges the initial list of edges in the graph
+     * 
+     * @param vertices the initial list of vertices in the graph
+     * @param edges    the initial list of edges in the graph
      */
-    AbstractGraph(List vertices, List edges) {
+    AbstractGraph(List<Vertex> vertices, List<Edge> edges) {
         this.vertices = vertices;
         this.edges = edges;
     }
 
     /**
      * Return the vertices in this graph
+     * 
      * @return the list of vertices in this graph
      */
-    public List vertices() {
+    public List<Vertex> vertices() {
         return vertices;
     }
 
     /**
      * Return the vertex in this graph using indices
+     * 
      * @return the vertex using indices
      */
     public Vertex getVertex(int index) {
@@ -39,10 +43,10 @@ public abstract class AbstractGraph implements Graph {
 
     /**
      * Return the edges in this graph
+     * 
      * @return the list of edges in this graph
      */
-    public List edges() {
+    public List<Edge> edges() {
         return edges;
     }
-
 }
